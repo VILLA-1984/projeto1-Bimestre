@@ -9,4 +9,8 @@ class Aluno extends Model
     protected $fillable =[
         'nome', 'email', 'cpf', 'data_nascimento', 'telefone', 'curso'
     ];
+
+    protected $casts = [
+        'data_nascimento' => 'date',
+    ];
 }
